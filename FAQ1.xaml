@@ -1,0 +1,94 @@
+﻿<Window x:Class="t.FAQ1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:t"
+        mc:Ignorable="d"
+        Title="FAQ1" Height="800" Width="1000">
+    <StackPanel>
+        <Label x:Name="lblwelcome" Content="WELCOME TO FAQ" FontSize="40" HorizontalAlignment="Center"></Label>
+        <StackPanel Orientation="Horizontal">
+            <Label x:Name="lbl1" Content="Select the Prime Numbers" Width="400" Height="40" FontSize="25" Margin="10"></Label>
+            <CheckBox x:Name="chk1" Content="12" Checked="First_Checked" Tag="0" FontSize="30" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk2" Content="11" Checked="First_Checked" Tag="1" FontSize="30" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk3" Content="99" Checked="First_Checked" Tag="0" FontSize="30" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk4" Content="71" Checked="First_Checked" Tag="1" FontSize="30" Margin="10"></CheckBox>
+            <Label x:Name="lbll1" Content="0"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label x:Name="lbl2" Content="    Select the Palindrome" Width="400" Height="40" FontSize="25" Margin="10"></Label>
+            <CheckBox x:Name="chk5" Content="MADAM" Checked="Second_Checked" Tag="1" FontSize="20" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk6" Content="CUP" Checked="Second_Checked" Tag="0" FontSize="20" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk7" Content="TOP" Checked="Second_Checked" Tag="0" FontSize="20" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk8" Content="MOM" Checked="Second_Checked" Tag="1" FontSize="20" Margin="10"></CheckBox>
+            <Label x:Name="lbll2" Content="0"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label x:Name="lbl3" Content="    Select the smallest number of 4digits" Width="400" Height="40" FontSize="22" Margin="10"></Label>
+            <CheckBox x:Name="chk9" Content="1000" Checked="Third_Checked" Tag="1" FontSize="25" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk10" Content="9999" Checked="Third_Checked" Tag="0" FontSize="25" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk11" Content="2548" Checked="Third_Checked" Tag="0" FontSize="25" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk12" Content="1111" Checked="Third_Checked" Tag="0" FontSize="25" Margin="10"></CheckBox>
+            <Label x:Name="lbll3" Content="0"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+        <Label x:Name="lbl4" Content="    Select the numbers divisible by 3" Width="400" Height="40" FontSize="25" Margin="10"></Label>
+            <CheckBox x:Name="chk13" Content="32" Checked="Fourth_Checked" FontSize="30" Tag="0" Visibility="Hidden" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk14" Content="55" Checked="Fourth_Checked" FontSize="30" Tag="0" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk15" Content="72" Checked="Fourth_Checked" FontSize="30" Tag="1" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk16" Content="87" Checked="Fourth_Checked" FontSize="30" Tag="1" Margin="10"></CheckBox>
+            <Label x:Name="lbll4" Content="0"></Label>
+    </StackPanel>
+    <StackPanel Orientation="Horizontal">
+            <Label x:Name="lbl5" Content="          i+=2 denotes" Width="400" Height="40" FontSize="25" Margin="10"></Label>
+            <CheckBox x:Name="chk17" Content="i+1" Checked="Fifth_Checked" FontSize="30" Tag="0" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk18" Content="i=i+1" Checked="Fifth_Checked" FontSize="30" Tag="0" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk19" Content="i=2" Checked="Fifth_Checked" FontSize="30" Tag="0" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk20" Content="i=i+2" Checked="Fifth_Checked" FontSize="30" Tag="1" Margin="10"></CheckBox>
+            <Label x:Name="lbll5" Content="0"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label x:Name="lbl6" Content="Shortcut key for designer to coding window" Width="400" Tag="1" Height="40" FontSize="20" Margin="10"></Label>
+            <CheckBox x:Name="chk21" Content="Shift+f7" Checked="Sixth_Checked" FontSize="25" Tag="0" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk22" Content="F7" Checked="Sixth_Checked" FontSize="30" Tag="1" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk23" Content="Alt+F7" Checked="Sixth_Checked" FontSize="30" Tag="0" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk24" Content="ctrl+F7" Checked="Sixth_Checked" FontSize="30" Tag="0" Margin="10"></CheckBox>
+            <Label x:Name="lbll6" Content="0"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label x:Name="lbl7" Content=" Tag value is a" Width="400" Height="40" FontSize="25" Margin="10"></Label>
+            <CheckBox x:Name="chk25" Content="stack" Checked="Seventh_Checked" FontSize="30" Tag="0" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk26" Content="secret value" Checked="Seventh_Checked" Tag="1" FontSize="30" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk27" Content="Global variable" Checked="Seventh_Checked" Tag="0" FontSize="30" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk28" Content="Hidden value" Checked="Seventh_Checked" Tag="0" FontSize="30" Margin="10"></CheckBox>
+            <Label x:Name="lbll7" Content="0"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label x:Name="lbl8" Content="Select the Default return type" Width="400" Height="40" Tag="1" FontSize="25" Margin="10"></Label>
+            <CheckBox x:Name="chk29" Content="Public" Checked="Eighth_Checked" FontSize="30" Tag="0" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk30" Content="Private" Checked="Eighth_Checked" FontSize="30" Tag="0" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk31" Content="void" Checked="Eighth_Checked" FontSize="30" Tag="1" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk32" Content="Default" Checked="Eighth_Checked" FontSize="30" Tag="0" Margin="10"></CheckBox>
+            <Label x:Name="lbll8" Content="0"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label x:Name="lbl9" Content="In messagebox ,second content is a" Width="400" Height="40" FontSize="25" Margin="10"></Label>
+            <CheckBox x:Name="chk33" Content="breakpoint" Checked="Nineth_Checked" FontSize="30" Tag="0" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk34" Content="title" Checked="Nineth_Checked" FontSize="30" Tag="1" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk35" Content="operator" Checked="Nineth_Checked" FontSize="30" Tag="0" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk36" Content="keyword" Checked="Nineth_Checked" FontSize="30" Tag="0" Margin="10"></CheckBox>
+            <Label x:Name="lbll9" Content="0"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label x:Name="lbl10" Content="    Select the odd Numbers" Width="400" Height="40" FontSize="25" Margin="10"></Label>
+            <CheckBox x:Name="chk37" Content="12" Checked="Tenth_Checked" FontSize="30" Tag="0" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk38" Content="11" Checked="Tenth_Checked" FontSize="30" Tag="1" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk39" Content="99" Checked="Tenth_Checked" FontSize="30" Tag="1" Margin="10"></CheckBox>
+            <CheckBox x:Name="chk40" Content="72" Checked="Tenth_Checked" FontSize="30" Tag="0" Margin="10"></CheckBox>
+            <Label x:Name="lbll10" Content="0"></Label>
+        </StackPanel>
+        <Label x:Name="lblfinish"></Label>
+        <Button x:Name="Btnfinish" Content="Finish" Click="Btnfinish_Click" Width="50" Height="20" Background="BlueViolet"></Button>
+    </StackPanel>
+</Window>
